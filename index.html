@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Pagina de IA</h1>
+        <h2>En esta pagina le vas a realizar una pregunta a un modelo de IA de google<h2>
+
+        <form action="" method="POST">
+            <label for="ia">Coloca tu pregunta:</label>
+            <br>
+            <input type="text" id="pregunta" name="pregunta">
+            <button type="submit">Enviar</button>
+
+        </form>
+        {% if respuesta %}
+        <h3>Respuesta del modelo de IA:</h3>
+        <p>{{ respuesta }}</p>
+
+        {% endif %}
+
+</body>
+</html>
